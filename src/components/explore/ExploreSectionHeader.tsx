@@ -29,6 +29,7 @@ export default function ExploreSectionHeader({
                 />
             </div>
 
+            {/* Dinamik butonlar  */}
             <div className={styles.headerRight}>
                 <Popover>
                     <SearchButton />
