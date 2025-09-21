@@ -51,7 +51,7 @@ export default function BlogDetailPage({ params }: blogDetailPageType) {
                                 key={post._id}
                                 author={{
                                     name: post.attributes.authors[0],
-                                    img: "/avatars/avatar1.png",
+                                    img: "/images/avatar.png",
                                 }}
                                 title={post.attributes.title}
                                 slug={post.attributes.slug}
