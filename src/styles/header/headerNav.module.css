@@ -6,20 +6,19 @@
     .nav {
         display: flex;
         flex: 1;
-        gap: 40px;
+        gap: var(--spacing-xxl);
         margin-left: 80px;
     }
 }
 
 .link {
-    color: white;
-    font-family: "Saira", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    color: var(--color-white);
+    font-size: var(--font-sm);
+    font-weight: var(--font-weight-normal);
     transition: color 0.2s ease;
     text-decoration: none;
 }
 
 .link:hover {
-    color: #d1d5db;
+    color: var(--color-gray-light);
 }
