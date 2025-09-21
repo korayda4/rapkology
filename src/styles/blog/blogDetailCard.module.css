@@ -1,89 +1,89 @@
 .blogDetailCard {
-    justify-content: flex-start;
     color: var(--color-white);
-    align-items: flex-start;
     gap: var(--spacing-20);
-    flex-direction: column;
     max-width: 1000px;
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .breadcrumb {
-    color: var(--color-gray-light);
     font-size: var(--font-base);
+    color: var(--color-gray-light);
 }
 
 .viewCount {
-    font-weight: var(--font-weight-normal);
-    color: var(--color-gray-light);
-    font-size: var(--font-base);
-    gap: var(--spacing-xs);
-    align-items: center;
     display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-size: var(--font-base);
+    font-weight: 500;
+    color: var(--color-gray-light);
 }
 
 .title {
-    font-weight: var(--font-weight-bold);
     font-size: var(--font-xxxl);
+    font-weight: var(--font-weight-bold);
     line-height: 1.2;
 }
 
 .content {
-    font-weight: var(--font-weight-semibold);
     font-size: var(--font-base);
+    font-weight: var(--font-weight-semibold);
     line-height: 1.5;
 }
 
 .imageWrapper {
-    object-fit: contain;
     position: relative;
+    object-fit: contain;
     width: 730px;
 }
 
 .image {
-    border-radius: var(--radius-md);
     object-fit: contain;
+    border-radius: var(--radius-md);
 }
 
 .playIcon {
-    transform: translate(-50%, -50%);
     position: absolute;
-    left: 50%;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .categories {
-    margin-top: var(--spacing-sm);
-    gap: var(--spacing-sm);
     display: flex;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
 }
 
 .category {
-    background-color: var(--color-gray-medium);
-    font-weight: var(--font-weight-normal);
     padding: var(--spacing-sm);
     font-size: var(--font-sm);
+    font-weight: var(--font-weight-normal);
     color: var(--color-white);
+    background-color: var(--color-gray-medium);
 }
 
 .interactions {
-    margin-top: var(--spacing-20);
-    gap: var(--spacing-20);
     display: flex;
+    gap: var(--spacing-20);
+    margin-top: var(--spacing-20);
 }
 
 .interactionItem {
-    color: var(--color-gray-light);
-    font-size: var(--font-base);
-    gap: var(--spacing-xs);
-    align-items: center;
     display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-size: var(--font-base);
+    color: var(--color-gray-light);
 }
 
 @media (max-width: 768px) {
     .blogDetailCard {
-        gap: var(--spacing-md);
         max-width: 100%;
+        gap: var(--spacing-md);
     }
 
     .breadcrumb {
@@ -97,23 +97,32 @@
     .content {
         font-size: var(--font-xs);
     }
-}
 
-.categories {
-    gap: var(--spacing-xs);
-    flex-wrap: wrap;
-}
+    .imageWrapper {
+        width: 360px;
 
-.category {
-    padding: var(--spacing-xs);
-    font-size: var(--font-sm);
-}
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
 
-.interactions {
-    gap: var(--spacing-md);
-    flex-wrap: wrap;
-}
+    .categories {
+        flex-wrap: wrap;
+        gap: var(--spacing-xs);
+    }
 
-.interactionItem {
-    font-size: var(--font-sm);
+    .category {
+        padding: var(--spacing-xs);
+        font-size: var(--font-sm);
+    }
+
+    .interactions {
+        flex-wrap: wrap;
+        gap: var(--spacing-md);
+    }
+
+    .interactionItem {
+        font-size: var(--font-sm);
+    }
 }
