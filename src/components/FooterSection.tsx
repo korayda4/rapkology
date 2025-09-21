@@ -33,7 +33,7 @@ export default function FooterSection() {
 
             <div className={styles.bottomBorder}></div>
 
-            <div style={{ display: "flex", justifyContent: "center", margin: "32px 0" }}>
+            <div style={{ display: "flex", justifyContent: "left", margin: "32px 0" }}>
                 <Image
                     src="/images/socialMedia.png"
                     alt="Social Media"
