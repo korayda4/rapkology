@@ -20,7 +20,9 @@ export default function ExploreSectionHeader({
     return (
         <div className={styles.header}>
             <div className={styles.headerLeft}>
-                <span>Keşfet</span>
+                <span className={styles.title}>
+                    Keşfet
+                </span>
                 <Image
                     src="/icons/compass-icon.png"
                     alt="Compass"

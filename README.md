@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 👋 Merhaba!
 
-## Getting Started
+Eğer buraya kadar geldiysen, selam! 👨‍💻  
+Ben bu projeyi geliştirirken **yazılımcı kafasıyla**, temiz ve sürdürülebilir bir yapı hedefledim. Hem kullanıcı deneyimi hem de kod okunabilirliği önceliğim oldu. Kodların anlaşılması ve yorumlanılması için özellikle birer birer yorum satırları ile açıklamalar yaptım.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Kullanılan Teknolojiler
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- ![Next.js](https://img.shields.io/badge/NextJS-000000?style=for-the-badge&logo=next.js&logoColor=white) Next.js
+- ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) TypeScript
+- ![Framer Motion](https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge) Framer Motion
+- ![Radix UI](https://img.shields.io/badge/Radix%20UI-000000?style=for-the-badge&logo=radix-ui&logoColor=white) Radix UI
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📄 Proje Hakkında
 
-## Learn More
+Bu proje **Dinamik ve Etkileşimli Rapkology Sitesi** örneğidir.
 
-To learn more about Next.js, take a look at the following resources:
+### Ana Özellikler:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Ana Sayfa ve Blog Detail sayfaları** tam işlevsel.
+- Tıklanabilir alanlar, listelenebilir içerikler ve **arama opsiyonları** çalışır.
+- **Filtreleme işlevleri** tam entegre, seçilen filtreye göre içerikler güncelleniyor.
+- Tüm animasyonlar ve efektler **Framer Motion ile** uygulanmıştır.
+- UI dökümantasyonu yetersiz olduğundan bazı tasarım kararlarını geliştirici gözüyle **optimize ettim**.
+- SOLID prensiplerine uygun: **her component tek görev, tek işlev mantığında** oluşturuldu.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Kullanıcı Deneyimi:
 
-## Deploy on Vercel
+- Blog kartları ve trend içerikler interaktif ve animasyonlu.
+- Responsive tasarım: mobil ve desktop deneyimleri optimize edildi.
+- Filtreleme ve listeleme işlevleri kullanıcıyı yormayacak şekilde tasarlandı.
+- Navigasyon ve breadcrumb yapıları ile sayfa hiyerarşisi net.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Bu projeyi incelerken, **hem kod yapısına hem de UX tasarımına** odaklandığımı göreceksiniz.  
+Her component **tek bir sorumluluk mantığında**, tekrar kullanılabilir şekilde tasarlandı.
+
+---
+
+**Teşekkürler!** 👏
