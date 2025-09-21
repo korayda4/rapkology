@@ -1,0 +1,25 @@
+.nav {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .nav {
+        display: flex;
+        flex: 1;
+        gap: 40px;
+        margin-left: 80px;
+    }
+}
+
+.link {
+    color: white;
+    font-family: "Saira", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.2s ease;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #d1d5db;
+}

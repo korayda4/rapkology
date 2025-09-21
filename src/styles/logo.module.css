@@ -1,0 +1,14 @@
+.container {
+    flex-shrink: 0;
+}
+
+.image {
+    width: 180px;
+    object-fit: contain;
+}
+
+@media (min-width: 768px) {
+    .image {
+        width: 235px;
+    }
+}

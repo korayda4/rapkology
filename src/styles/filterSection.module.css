@@ -1,0 +1,78 @@
+.filterSection {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 80%;
+}
+
+.title {
+    font-family: "Saira", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 104%;
+    color: white;
+}
+
+.filterButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filterButton {
+    padding: 10px 20px;
+    font-family: "Saira", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    border: 2px solid rgb(49, 49, 49);
+    background-color: transparent;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+
+.active {
+    background-color: yellow;
+    color: black;
+}
+
+.filterButton:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* ====== RESPONSIVE: Mobile (yatay kayan butonlar) ====== */
+@media (max-width: 768px) {
+    .filterSection {
+        width: 100%;
+        gap: 12px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .filterButtons {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        gap: 12px;
+        padding-bottom: 6px;
+        margin-left: -4px;
+        padding-left: 4px;
+    }
+
+    .filterButtons::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filterButtons {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .filterButton {
+        flex: 0 0 auto;
+    }
+}

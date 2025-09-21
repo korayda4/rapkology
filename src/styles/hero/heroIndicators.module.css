@@ -1,0 +1,13 @@
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #000;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dotActive {
+    background-color: #facc15;
+    transform: scale(1.2);
+}
+

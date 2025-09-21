@@ -1,0 +1,65 @@
+.blogSection {
+    display: flex;
+    gap: 4rem;
+    padding-inline: 4rem;
+    margin-top: 120px;
+    /* header boşluğu */
+}
+
+.leftColumn {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.rightColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+/* Trendler */
+.trendSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.trendHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* başlık ve ikon arası boşluk */
+}
+
+.trendList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: 100%;
+    padding-bottom: 4rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .blogSection {
+        flex-direction: column;
+        padding-inline: 1rem;
+        margin-top: 80px;
+    }
+
+    .leftColumn,
+    .rightColumn {
+        align-items: flex-start;
+    }
+
+    .trendList {
+        grid-template-columns: 1fr;
+        /* mobilde tek sütun */
+    }
+}

@@ -1,0 +1,15 @@
+.button {
+    background: white;
+    color: black;
+    font-size: 14px;
+    font-family: "Saira", sans-serif;
+    font-weight: 400;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.button:hover {
+    background: #e5e5e5;
+}

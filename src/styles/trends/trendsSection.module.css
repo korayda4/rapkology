@@ -1,0 +1,75 @@
+.trends {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 2rem;
+    padding-inline: 1rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-block: 4rem;
+}
+
+.title {
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 104%;
+    color: #fff;
+}
+
+.cards {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr;
+}
+
+.allButtonWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.allButton {
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.allButton:hover {
+    transform: scale(1.05);
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header {
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 1440px) {
+    .trends {
+        padding-inline: 6rem;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .header {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        justify-content: center;
+        text-align: center;
+    }
+}

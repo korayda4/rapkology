@@ -1,0 +1,25 @@
+.container {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 24px 0;
+    border-bottom: 1px solid #2a2a2a;
+    background: rgba(18, 18, 18, 0.9);
+}
+
+.link {
+    color: white;
+    font-size: 14px;
+    font-family: "Saira", sans-serif;
+    font-weight: 400;
+    transition: color 0.2s;
+}
+
+.link:hover {
+    color: #d1d5db;
+}

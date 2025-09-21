@@ -1,0 +1,120 @@
+.cardWrapper {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: stretch;
+    max-width: 800px;
+    margin-block: 2rem;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.blogImage {
+    width: 300px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 4rem;
+}
+
+.date {
+    text-align: left;
+    align-self: flex-start;
+    font-size: 0.875rem;
+    color: rgba(58, 58, 58, 0.8);
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.rightTop {
+    height: 190px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profileRow {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profileName {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.titleWrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    max-width: 100%;
+    word-break: break-word;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.08);
+    align-self: stretch;
+}
+
+.rightBottom {
+    padding-top: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.readMore {
+    color: #ffffff;
+    text-align: left;
+    align-self: flex-start;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .cardWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blogImage {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 1.5rem;
+    }
+
+    .rightTop {
+        height: 120px;
+    }
+
+
+}

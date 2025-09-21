@@ -1,0 +1,160 @@
+.hero2 {
+    background: #111111;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    padding: 18rem 0 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.topImages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 6rem;
+}
+
+.twitch {
+    width: 500px;
+    height: auto;
+    object-fit: contain;
+}
+
+.follow {
+    width: 280px;
+    height: auto;
+    object-fit: contain;
+}
+
+.bottomGroup {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.stage {
+    width: 1330px;
+    width: 100%;
+    background-image: url("/images/hero-image3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.man {
+    object-fit: contain;
+    width: 420px;
+    height: auto;
+}
+
+.woman {
+    width: 300px;
+    object-fit: contain;
+    height: auto;
+}
+
+.people {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+    z-index: 2;
+}
+
+.person {
+    width: 280px;
+    height: auto;
+    display: block;
+}
+
+.gradientVertical {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, rgba(18, 18, 18, 1) 100%);
+    z-index: 1;
+}
+
+.hslide {
+    display: block;
+    width: 100vw;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    filter: grayscale(100%) brightness(0.6);
+    z-index: 99;
+}
+
+.hslideMobile {
+    display: none;
+
+}
+
+/* Mobile */
+@media (max-width: 1439px) {
+    .twitch {
+        width: 330px;
+    }
+
+    .hslide {
+        display: none;
+    }
+
+    .hero2 {
+        max-height: 600px;
+    }
+
+    .hslideMobile {
+        display: block;
+        width: 100vw;
+        height: auto;
+        object-fit: contain;
+        bottom: -2rem;
+        filter: grayscale(100%) brightness(0.6);
+        left: 0;
+        position: absolute;
+        z-index: 99;
+    }
+
+    .follow {
+        width: 240px;
+        object-fit: contain;
+        margin-top: -1rem;
+    }
+
+    .stage {
+        width: 1330px !important;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .man {
+        object-fit: contain;
+        width: 280px;
+        height: auto;
+
+    }
+
+    .woman {
+        width: 220px;
+        object-fit: contain;
+        height: auto;
+    }
+
+    .people {
+        gap: 10px;
+    }
+}

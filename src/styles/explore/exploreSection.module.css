@@ -1,0 +1,118 @@
+.exploreSection {
+    display: flex;
+    gap: 40px;
+    padding-inline: 4rem;
+    margin-top: 40px;
+}
+
+.leftColumn {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rightColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    font-family: "Saira", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.blogList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mobileOnly {
+    display: none;
+}
+
+.desktopOnly {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .exploreSection {
+        flex-direction: column;
+        padding-inline: 1rem;
+    }
+
+    .rightColumn {
+        display: none;
+    }
+
+    .mobileOnly {
+        display: block;
+    }
+
+    .desktopOnly {
+        display: none;
+    }
+
+    .header {
+        font-size: 28px;
+        gap: 8px;
+    }
+
+    .blogList {
+        gap: 16px;
+    }
+}
+
+.blogList {
+    display: flex;
+    gap: 20px;
+}
+
+.listView {
+    flex-direction: column;
+}
+
+.gridView {
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.gridView>* {
+    flex: 1 1 calc(50% - 20px);
+    min-width: 250px;
+}
+
+.icon {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.icon:hover {
+    opacity: 1;
+}
+
+.active {
+    opacity: 1;
+    filter: drop-shadow(0 0 4px yellow);
+}
