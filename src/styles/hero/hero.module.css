@@ -23,11 +23,11 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: #fff;
+    color: var(--color-white);
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: rgba(0, 0, 0, 0.4);
+    background: var(--color-bg-dark-transparent);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,11 +36,11 @@
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-    background: rgba(0, 0, 0, 0.6);
+    background: var(--color-bg-dark-transparent);
 }
 
 .swiper-pagination-bullet {
-    background: #facc15;
+    background: var(--color-yellow);
     opacity: 0.8;
     transition: opacity 0.2s;
 }
@@ -51,9 +51,9 @@
 
 .indicatorsWrapper {
     position: absolute;
-    bottom: 20px;
+    bottom: var(--spacing-20);
+    gap: var(--spacing-xs);
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 8px;
 }
