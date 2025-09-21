@@ -4,22 +4,19 @@
     left: 0;
     width: 100%;
     height: 80px;
-
     display: flex;
     align-items: center;
-
-    border-bottom: 1px solid #2a2a2a;
+    border-bottom: 1px solid var(--color-bg-dark);
     background: rgba(18, 18, 18, 0.1);
     backdrop-filter: blur(24px);
     z-index: 50;
-
     padding-inline: 80px;
 }
 
 .right {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: var(--spacing-md);
     margin-left: auto;
 }
 
@@ -42,14 +39,14 @@
 /* Responsive */
 @media (max-width: 428px) {
     .header {
-        padding-inline: 20px !important;
+        padding-inline: var(--spacing-20) !important;
         border: none;
     }
 }
 
 @media (max-width: 375px) {
     .header {
-        padding-inline: 10px !important;
+        padding-inline: var(--spacing-xs) !important;
     }
 }
 
