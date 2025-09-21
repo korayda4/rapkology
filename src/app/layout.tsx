@@ -23,6 +23,9 @@ const saira = Saira({
 export const metadata: Metadata = {
   title: "Rapkology",
   description: "Trap & Rap Music Blog",
+  icons: {
+    icon: "/favicon-rapkology.ico",
+  },
 };
 
 export default function RootLayout({
