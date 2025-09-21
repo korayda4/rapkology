@@ -21,7 +21,7 @@ Bu proje **Dinamik ve Etkileşimli Rapkology Sitesi** örneğidir.
 ### Ana Özellikler:
 
 - **Ana Sayfa ve Blog Detail sayfaları** tam işlevsel.
-- Tıklanabilir alanlar, listelenebilir içerikler ve **arama opsiyonları** çalışır.
+- Tıklanabilir alanlar, listelenebilir içerikler ve **arama opsiyonları** (Header harici) çalışır.
 - **Filtreleme işlevleri** tam entegre, seçilen filtreye göre içerikler güncelleniyor.
 - Tüm animasyonlar ve efektler **Framer Motion ile** uygulanmıştır.
 - UI dökümantasyonu yetersiz olduğundan bazı tasarım kararlarını geliştirici gözüyle **optimize ettim**.
@@ -40,5 +40,29 @@ Bu projeyi incelerken, **hem kod yapısına hem de UX tasarımına** odaklandı�
 Her component **tek bir sorumluluk mantığında**, tekrar kullanılabilir şekilde tasarlandı.
 
 ---
+
+### TEKNİK
+
+**İlgili Sayfa**
+- 2 adet sayfa bulunmakta, Ana sayfa App/page.tsx, Blog Detay sayfası App/blog/[Slug]/page.tsx ile yönlendirilir.
+
+**İlgili Component**
+- Her Sectionun kendi componenti veya ortak component bulunur, src/components/(ilgili alan)/ şeklinde componentlerini görebilirsiniz (örn: src/components/header). Ortak Componentler UI içindedir.
+
+**Component veya Sayfa Tasarımları**
+- Her Component, Section ve Sayfanın tasarım dosyası ayrıdır, src/styles/(ilgili alan)/ şeklinde tasarım dosyalarını görüntüleyebilirsiniz (örn: src/styles/header). Ortak Componentlerin tasarımları UI içerisindedir, kendi alanı olmayan dosyalar src/styles içindedir.
+
+**Component veya Sayfa Tip Propsları**
+- Her Component, Section ve Sayfanın tip dosyası ayrıdır, src/types/ şeklinde tip dosyalarını görüntüleyebilirsiniz.
+
+**Statik Veriler ve Mockdata**
+- Sistem içersinde kullanılan sıralama fonksiyonlarıyla statik veriler dinamik oluşturuluyor, bazı veriler mockdatadan anlık çekiliyor, Her Section ve Componentin verisi ayrı dosya olarak src/const/ içerisindedir.
+
+**SEO Metadata**
+- 2 Sayfamızın MetaDataları için src/meta üzerinden dinamik veya statik oalrak düzenlenebilir, Blog Detay sayfası metasını dinamik oluşturabilmektedir.
+
+**Ek Paketler**
+- Animasyonlar için Framer Motion
+- Modal,Button,Input için Radix UI
 
 **Teşekkürler!** 👏
