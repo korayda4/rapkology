@@ -39,5 +39,5 @@
 
 .active {
     opacity: 1;
-    filter: drop-shadow(0 0 4px yellow);
+    filter: drop-shadow(0 0 4px var(--color-yellow));
 }

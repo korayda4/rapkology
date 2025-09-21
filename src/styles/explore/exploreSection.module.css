@@ -96,17 +96,3 @@
     min-width: 250px;
 }
 
-.icon {
-    cursor: pointer;
-    opacity: 0.6;
-    transition: opacity 0.2s;
-}
-
-.icon:hover {
-    opacity: 1;
-}
-
-.active {
-    opacity: 1;
-    filter: drop-shadow(0 0 4px yellow);
-}
