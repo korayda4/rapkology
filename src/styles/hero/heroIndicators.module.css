@@ -7,7 +7,7 @@
 }
 
 .dotActive {
-    background-color: #facc15;
+    background-color: var(--color-yellow);
     transform: scale(1.2);
 }
 

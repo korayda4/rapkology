@@ -9,7 +9,7 @@
 .slideImage {
     position: absolute;
     left: -200px;
-    top: 20px;
+    top: var(--spacing-20);
     object-fit: cover;
     display: block;
     z-index: 0;
@@ -37,15 +37,13 @@
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    font-family: 'Saira Condensed', sans-serif;
+    gap: var(--spacing-lg);
     z-index: 10;
 }
 
 .title {
-    font-family: 'Saira Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 60px;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-xxxl);
     line-height: 110%;
     letter-spacing: -2%;
     text-align: left;
@@ -53,8 +51,8 @@
 }
 
 .description {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: var(--font-base);
+    font-weight: var(--font-weight-normal);
     line-height: 120%;
     text-align: left;
 }
@@ -71,8 +69,8 @@
 
 .indicatorsWrapper {
     display: flex;
-    gap: 8px;
-    margin-top: 12px;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-sm);
 }
 
 .hslide {
@@ -91,7 +89,6 @@
 
 }
 
-/* ---------------- MOBILE / TABLET ---------------- */
 @media (max-width: 1439px) {
     .hslide {
         display: none;
@@ -128,7 +125,7 @@
         object-position: right 75% top 100%;
         display: block;
         z-index: 0;
-        margin-top: 4rem;
+        margin-top: var(--spacing-xxxl);
         background-repeat: no-repeat;
     }
 
@@ -139,33 +136,31 @@
 
     .contentContainer {
         position: relative;
-        top: 5rem;
+        top: var(--spacing-xxxl);
         right: auto;
         transform: none;
         max-width: 90%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: var(--spacing-md);
         width: 240px;
         text-align: center;
-        padding: 24px 0 0 0;
+        padding: var(--spacing-lg) 0 0 0;
         z-index: 10;
     }
 
     .title {
-        font-family: 'Saira Condensed', sans-serif;
-        font-weight: 700;
-        font-size: 26px;
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-lg);
         line-height: 100%;
         letter-spacing: -4%;
         text-align: center;
     }
 
     .description {
-        font-family: 'Saira', sans-serif;
-        font-weight: 400;
-        font-size: 14px;
+        font-weight: var(--font-weight-normal);
+        font-size: var(--font-sm);
         line-height: 100%;
         letter-spacing: 0%;
         text-align: center;

@@ -5,7 +5,7 @@
     height: 44px;
     margin-top: -22px;
     background: transparent;
-    color: #fff;
+    color: var(--color-white);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -22,14 +22,14 @@
 
 .prev,
 .next {
-    left: 24px;
+    left: var(--spacing-lg);
 }
 
 
 .prev::after,
 .next::after {
-    font-size: 20px;
-    color: #fff;
+    font-size: var(--font-md);
+    color: var(--color-white);
 }
 
 
