@@ -1,13 +1,13 @@
 .content {
-    margin-top: 8px;
-    width: 256px;
-    padding: 16px;
-    background: black;
-    border-radius: 8px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
-    border: none;
-    display: flex;
+    background: var(--color-bg-dark);
+    border-radius: var(--radius-md);
+    margin-top: var(--spacing-xs);
+    padding: var(--spacing-md);
     flex-direction: column;
-    gap: 8px;
+    gap: var(--spacing-xs);
+    display: flex;
+    width: 256px;
+    border: none;
     z-index: 999;
 }

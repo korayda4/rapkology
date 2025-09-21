@@ -1,15 +1,14 @@
 .button {
-    background: white;
-    color: black;
-    font-size: 14px;
-    font-family: "Saira", sans-serif;
-    font-weight: 400;
-    padding: 8px 16px;
+    background: var(--color-white);
+    color: var(--color-black);
+    font-size: var(--font-sm);
+    font-weight: var(--font-weight-normal);
+    padding: var(--spacing-xs) var(--spacing-md);
     border: none;
     cursor: pointer;
     transition: background 0.2s ease;
 }
 
 .button:hover {
-    background: #e5e5e5;
+    background: var(--color-gray-light);
 }

@@ -1,14 +1,13 @@
 .footerSection {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: var(--spacing-xxl);
     width: 100%;
-    font-family: "Saira", sans-serif;
 }
 
 .title {
-    font-weight: 700;
-    font-size: 40px;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-xxl);
 }
 
 .emailRow {
@@ -19,29 +18,29 @@
 
 .emailInput {
     flex: 1;
-    margin-right: 10px;
-    padding: 10px 15px;
+    margin-right: var(--spacing-sm);
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: var(--font-base);
     border: none;
     outline: none;
-    font-size: 16px;
     background-color: transparent;
     border-radius: 6px;
 }
 
 .sendButton {
-    padding: 0px 20px;
-    font-size: 16px;
+    padding: 0px var(--spacing-20);
+    font-size: var(--font-base);
+    color: var(--color-yellow);
+    border-radius: var(--spacing-xs);
     font-weight: 500;
     cursor: pointer;
     background-color: transparent;
-    color: yellow;
     border: none;
-    border-radius: 6px;
 }
 
 .bottomBorder {
     margin-top: -16px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--color-gray-medium);
     width: 100%;
 }
 
@@ -52,44 +51,45 @@
 
 .links {
     display: flex;
-    gap: 10px;
+    gap: var(--spacing-sm);
 }
 
 .linkColumn {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: var(--spacing-sm);
 }
 
 .link {
     text-decoration: none;
-    color: white;
-    font-size: 16px;
+    color: var(--color-white);
+    font-size: var(--font-base);
 }
 
 .copyright {
-    font-size: 14px;
-    color: #646464;
+    font-size: var(--font-sm);
+    color: var(--color-gray-light);
 }
 
 
 @media (max-width: 768px) {
 
     .footerSection {
-        padding-bottom: 2rem;
+        padding-bottom: var(--spacing-xl);
     }
+
     .title {
-        font-size: 18px;
+        font-size: var(--font-md);
     }
 
     .emailInput {
-        font-size: 14px;
-        padding: 8px 12px;
+        font-size: var(--font-sm);
+        padding: var(--spacing-xs) var(--spacing-sm);
     }
 
     .emailRow {
         align-items: stretch;
-        gap: 10px;
+        gap: var(--spacing-sm);
     }
 
     .sendButton {
@@ -97,10 +97,10 @@
     }
 
     .links {
-        gap: 20px;
+        gap: var(--spacing-20);
     }
 
     .linkColumn {
-        gap: 6px;
+        gap: var(--spacing-xs);
     }
 }
