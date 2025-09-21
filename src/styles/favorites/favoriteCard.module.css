@@ -8,9 +8,8 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    padding-bottom: 2rem;
-    background-color: rgba(42, 42, 42, 1);
-    z-index: 11;
+    padding-bottom: var(--spacing-xl);
+    background-color: var(---color-bg-dark);
 }
 
 .bgWrap {
@@ -29,40 +28,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
-    margin-top: 8px;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-xs);
     width: 100%;
-}
-
-.swiper-slide {
-    z-index: 99 !important;
 }
 
 .badge {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1.5rem;
-    background: rgba(50, 50, 50, 1);
+    margin-top: var(--spacing-lg);
+    background: var(--color-bg-dark);
     padding: 5px 10px;
-    border-radius: 65px;
-    font-family: "Saira", sans-serif;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.92);
-    font-size: 12px;
+    border-radius: var(--radius-xxxl);
+    font-weight: var(--font-weight-normal);
+    color: var(--color-white);
+    font-size: var(--font-xs);
 }
 
 .rank {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     opacity: 0.95;
-    margin-left: 6px;
+    margin-left: var(--spacing-xxs);
 }
 
 .albumWrap {
     position: relative;
     width: 160px;
     height: 160px;
-    border-radius: 8px;
+    border-radius: var(--radius-md);
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -95,17 +89,16 @@
     word-break: break-all;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: var(--spacing-xs);
     align-items: center;
     text-align: center;
-    margin-top: 4px;
+    margin-top: var(--spacing-xs);
 }
 
 .artist {
-    font-family: "Saira", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 1);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-sm);
+    color: var(--color-white);
 }
 
 .cardBg {
@@ -122,10 +115,9 @@
 
 
 .song {
-    font-family: "Saira", sans-serif;
-    font-weight: 400;
-    font-size: 13px;
-    color: rgba(200, 200, 200, 0.95);
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-xs);
+    color: var(--color-gray-light);
     max-width: 90%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -162,7 +154,7 @@
         top: 15%;
         left: 0px;
         width: 80px;
-        border-radius: 0px 32px 32px 0px;
+        border-radius: 0px var(--radius-xxl) var(--radius-xxl) 0px;
         height: 160px;
         rotate: 0deg;
         z-index: -1;
@@ -171,12 +163,12 @@
     .center {
         flex-direction: column;
         align-items: center;
-        margin-left: 60px;
-        gap: 8px;
+        margin-left: var(--spacing-xxxl);
+        gap: var(--spacing-xs);
     }
 
     .song {
-        font-size: 14px;
+        font-size: var(--font-sm);
         max-width: 160px;
         word-break: break-all;
     }
