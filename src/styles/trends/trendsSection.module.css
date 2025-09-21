@@ -1,42 +1,41 @@
 .trends {
-    display: flex;
+    padding-bottom: var(--spacing-xl);
+    padding-inline: var(--spacing-md);
     flex-direction: column;
-    gap: 32px;
-    padding-bottom: 2rem;
-    padding-inline: 1rem;
+    gap: var(--spacing-xl);
+    display: flex;
 }
 
 .header {
-    display: flex;
+    padding-block: var(--spacing-xxxl);
+    gap: var(--spacing-sm);
     align-items: center;
-    gap: 12px;
-    padding-block: 4rem;
+    display: flex;
 }
 
 .title {
-    font-family: "Saira Condensed", sans-serif;
-    font-weight: 700;
-    font-size: 40px;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-xxl);
+    color: var(--color-white);
     line-height: 104%;
-    color: #fff;
 }
 
 .cards {
-    display: grid;
-    gap: 32px;
     grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+    display: grid;
 }
 
 .allButtonWrapper {
-    display: flex;
+    margin-top: var(--spacing-xxl);
     justify-content: center;
-    margin-top: 40px;
+    display: flex;
 }
 
 .allButton {
+    transition: transform 0.2s ease;
     object-fit: contain;
     cursor: pointer;
-    transition: transform 0.2s ease;
 }
 
 .allButton:hover {
