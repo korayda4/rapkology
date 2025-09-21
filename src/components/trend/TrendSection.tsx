@@ -28,7 +28,7 @@ export default function TrendsSection({ count = 6 }: { count?: number }) {
                     alt="Trend Icon"
                     width={40}
                     height={24}
-                    objectFit="contain"
+                    style={{ objectFit: "contain" }}
                 />
             </div>
 

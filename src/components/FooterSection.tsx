@@ -33,13 +33,13 @@ export default function FooterSection() {
 
             <div className={styles.bottomBorder}></div>
 
-            <div className={styles.imageWrapper}>
+            <div style={{ display: "flex", justifyContent: "center", margin: "32px 0" }}>
                 <Image
                     src="/images/socialMedia.png"
                     alt="Social Media"
                     width={220}
                     height={30}
-                    objectFit="contain"
+                    style={{ objectFit: "contain" }}
                 />
             </div>
 
