@@ -42,6 +42,7 @@ export default function HeroSlide({ slide, indicators }: HeroSlideProps) {
                             width={136}
                             height={40}
                             className="w-full h-auto"
+                            objectFit="cover"
                         />
                     </div>
                 </motion.div>
@@ -73,6 +74,8 @@ export default function HeroSlide({ slide, indicators }: HeroSlideProps) {
                 width={1920}
                 height={1080}
                 priority
+                objectFit="cover"
+
             />
 
             <Image
@@ -81,6 +84,7 @@ export default function HeroSlide({ slide, indicators }: HeroSlideProps) {
                 className={styles.hslideMobile}
                 width={1920}
                 height={1080}
+                objectFit="cover"
                 priority
             />
 
