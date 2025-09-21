@@ -3,23 +3,22 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 10px;
-    font-family: "Saira", sans-serif;
-    font-size: 40px;
-    font-weight: 700;
+    padding: 0 var(---spacing-sm);
+    font-size: var(--font-xxl);
+    font-weight: var(--font-weight-bold);
 }
 
 .headerLeft {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 40px;
+    gap: var(--spacing-sm);
+    font-size: var(--font-xxl);
 }
 
 .title {
     font-family: "Saira", sans-serif;
-    font-weight: 700;
-    font-size: 60px;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-xxxl);
     margin: 0;
 }
 
@@ -31,7 +30,7 @@
 .headerRight {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: var(--spacing-sm);
 }
 
 .icon:hover {
