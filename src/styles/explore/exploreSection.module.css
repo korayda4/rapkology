@@ -1,50 +1,49 @@
 .exploreSection {
     display: flex;
-    gap: 40px;
-    padding-inline: 4rem;
-    margin-top: 40px;
+    gap: var(--spacing-xxl);
+    padding-inline: var(--spacing-xxxl);
+    margin-top: var(--spacing-xxl);
 }
 
 .leftColumn {
     flex: 2;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: var(--spacing-20);
 }
 
 .rightColumn {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: var(--spacing-xxl);
 }
 
 .header {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 10px;
-    font-family: "Saira", sans-serif;
-    font-size: 40px;
-    font-weight: 700;
+    gap: var(--spacing-sm);
+    font-size: var(--font-xxl);
+    font-weight: var(--font-weight-bold);
 }
 
 .headerLeft {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: var(--spacing-sm);
 }
 
 .headerRight {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: var(--spacing-sm);
 }
 
 .blogList {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: var(--spacing-20);
 }
 
 .mobileOnly {
@@ -58,7 +57,7 @@
 @media (max-width: 768px) {
     .exploreSection {
         flex-direction: column;
-        padding-inline: 1rem;
+        padding-inline: var(--spacing-md);
     }
 
     .rightColumn {
@@ -73,19 +72,14 @@
         display: none;
     }
 
-    .header {
-        font-size: 28px;
-        gap: 8px;
-    }
-
     .blogList {
-        gap: 16px;
+        gap: var(--spacing-md);
     }
 }
 
 .blogList {
     display: flex;
-    gap: 20px;
+    gap: var(--spacing-20);
 }
 
 .listView {
