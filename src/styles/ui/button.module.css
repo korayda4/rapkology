@@ -1,15 +1,15 @@
 .button {
     width: 100%;
-    background: #111;
-    color: white;
+    background: var(--color-bg-dark);
+    color: var(--color-white);
     border: none;
-    border-radius: 6px;
-    padding: 8px 12px;
-    font-size: 14px;
+    border-radius: var(--radius-md);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-sm);
     cursor: pointer;
     transition: background 0.2s ease;
 }
 
 .button:hover {
-    background: #333;
+    background: var(--color-bg-dark-transparent);
 }

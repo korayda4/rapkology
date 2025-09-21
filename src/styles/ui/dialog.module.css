@@ -1,7 +1,7 @@
 .overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: var(--color-bg-dark-transparent);
 }
 
 .content {
@@ -9,9 +9,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #121212;
-    padding: 24px;
-    border-radius: 12px;
+    background: var(--color-bg-dark);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
     max-width: 400px;
     width: 90%;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.4);

@@ -1,11 +1,11 @@
 .input {
     width: 100%;
-    padding: 8px 10px;
-    border-radius: 6px;
-    border: 1px solid #3f3f46;
-    background: #111;
-    color: white;
-    font-size: 14px;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-bg-dark);
+    background: var(--color-bg-dark);
+    color: var(--color-white);
+    font-size: var(--font-sm);
 }
 
 .input:focus {
